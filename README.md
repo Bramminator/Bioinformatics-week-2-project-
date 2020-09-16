@@ -3,14 +3,10 @@ R Notebook for beetle data
 
   - [The data set](#the-data-set)
       - [Flour beetle](#flour-beetle)
+  - [Variables](#variables)
 
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you
 execute code within the notebook, the results appear beneath the code.
-
-``` r
-library(AICcmodavg)
-data(beetle)
-```
 
 # The data set
 
@@ -21,11 +17,16 @@ This data set illustrates the acute mortality of flour beetles
 
 ![Flour Beetle](Graphics/Red-flour-beetle.jpg)
 
-When you save the notebook, an HTML file containing the code and output
-will be saved alongside it (click the *Preview* button or press
-*Ctrl+Shift+K* to preview the HTML file).
+Source:
+<https://plunketts.net/pest-identification/other-pests/red-flour-beetles-confused-flour-beetles>
 
-The preview shows you a rendered HTML copy of the contents of the
-editor. Consequently, unlike *Knit*, *Preview* does not run any R code
-chunks. Instead, the output of the chunk when it was last run in the
-editor is displayed.
+# Variables
+
+  - Dose:
+
+  - 
+<!-- end list -->
+
+``` r
+beetle.data <- read.csv("Data/beetle.csv")
+```
