@@ -1,6 +1,11 @@
 ---
-title: "R Notebook"
-output: html_notebook
+title: "R Notebook for beetle data"
+output: 
+  github_document
+    toc: true
+      toc_depth: 3
+editor_options:
+  chunk_output_type: inline
 ---
 
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
@@ -8,7 +13,8 @@ This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute
 Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
 
 ```{r}
-plot(cars)
+library(AICcmodavg)
+data(beetle)
 ```
 
 Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
