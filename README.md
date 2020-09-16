@@ -3,15 +3,10 @@ R Notebook for beetle data
 
   - [The data set](#the-data-set)
       - [Flour beetle](#flour-beetle)
-      - [Something else](#something-else)
+  - [Variables](#variables)
 
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you
 execute code within the notebook, the results appear beneath the code.
-
-``` r
-library(AICcmodavg)
-data(beetle)
-```
 
 # The data set
 
@@ -25,4 +20,13 @@ This data set illustrates the acute mortality of flour beetles
 Source:
 <https://plunketts.net/pest-identification/other-pests/red-flour-beetles-confused-flour-beetles>
 
-## Something else
+# Variables
+
+  - Dose:
+
+  - 
+<!-- end list -->
+
+``` r
+beetle.data <- read.csv("Data/beetle.csv")
+```
