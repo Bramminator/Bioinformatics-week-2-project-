@@ -1,9 +1,9 @@
 ---
 title: "R Notebook for beetle data"
 output: 
-  github_document
+  github_document:
     toc: true
-      toc_depth: 3
+    toc_depth: 3
 editor_options:
   chunk_output_type: inline
 ---
