@@ -21,6 +21,7 @@ This data set illustrates the acute mortality of flour beetles (Tribolium confus
 ## Flour beetle
 
 ![Flour Beetle](Graphics/Red-flour-beetle.jpg)
+
 Source: https://plunketts.net/pest-identification/other-pests/red-flour-beetles-confused-flour-beetles
 
 ## Something else
