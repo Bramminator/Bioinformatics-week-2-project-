@@ -13,6 +13,11 @@ This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute
 # The data set
 This data set illustrates the acute mortality of flour beetles (Tribolium confusum) following 5 hour exposure to carbon disulfide gas.
 
+### The source of the dataset
+Burnham, K. P., Anderson, D. R. (2002) Model Selection and Multimodel Inference: a practical information-theoretic approach. Second edition. Springer: New York.
+
+Young, L. J., Young, J. H. (1998) Statistical Ecology. Kluwer Academic Publishers: London.
+
 ## Flour beetle
 
 ![Flour Beetle](Graphics/Red-flour-beetle.jpg)
