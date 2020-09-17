@@ -13,8 +13,8 @@ execute code within the notebook, the results appear beneath the code.
 
 # The data set
 
-This data set illustrates the acute mortality of flour beetles
-(Tribolium confusum) following 5 hour exposure to carbon disulfide gas.
+This data set the mortality of flour beetles (Tribolium confusum) after
+exposure to carbon disulfide gas for 5 hours.
 
 ## Flour beetle
 
