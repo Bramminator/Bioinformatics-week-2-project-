@@ -1,4 +1,4 @@
-dose.mg,number.tested,number.killed,mortality.rate
+dose_mg,number_tested,number_killed,mortality_rate
 49.06,49,6,0.122449
 52.99,60,13,0.2166667
 56.91,62,18,0.2903226
