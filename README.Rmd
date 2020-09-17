@@ -26,28 +26,27 @@ Source: https://plunketts.net/pest-identification/other-pests/red-flour-beetles-
 
 # Variables
 
-We have chosen to use the following naming convention: lower case words seperated by dots in the case of variables, and first word lowercase and any additional words in upper case for functions. An example of a variable structured via this naming convention might be weight.kg, and an example of a properly named function would be computeAverage.
+We have chosen to use the following naming convention: lower case words seperated by _ in the case of variables, and first word lowercase and any additional words in upper case for functions. An example of a variable structured via this naming convention might be weight_kg, and an example of a properly named function would be computeAverage.
 
 ```{r}
-beetle.data <- read.csv("Data/beetle.csv")
-str(beetle.data)
+beetle_data <- read.csv("Data/beetle.csv")
+str(beetle_data)
 ```
 
-# Analysis
-We will do a short analysis of the data
 
-## Libraries
-```{r echo=TRUE, results='hide', message=FALSE}
+```{r}
 library(ggplot2)
 library(tidyverse)
-```
-
-## Plot
-```{r}
-beetle.data %>%
-  ggplot(aes(x = dose.mg, y = mortality.rate)) +
+beetle_data %>%
+  ggplot(aes(x = dose_mg, y = mortality_rate)) +
     geom_point() +
     geom_smooth(method = 'lm')
 
+```
+
+```{r}
+x = beetle_data$dose_mg
+y = beetle_data$mortality_rate
+cor(x,y)
 ```
 
