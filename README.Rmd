@@ -26,28 +26,33 @@ Young, L. J., Young, J. H. (1998) Statistical Ecology. Kluwer Academic Publisher
 
 # Variables
 
+<<<<<<< HEAD
+We have chosen to use the following naming convention: lower case words seperated by _ in the case of variables, and first word lowercase and any additional words in upper case for functions. An example of a variable structured via this naming convention might be weight_kg, and an example of a properly named function would be computeAverage.
+=======
 We have chosen to use the following naming convention: lower case words seperated by underscores in the case of variables, and first word lowercase and any additional words in upper case for functions. An example of a variable structured via this naming convention might be weight_kg, and an example of a properly named function would be computeAverage.
+>>>>>>> 74853fab8a70d0be06eabeb4a9a2c4d1c05de5b4
 
 ```{r}
-beetle.data <- read.csv("Data/beetle.csv")
-str(beetle.data)
-```
-
-# Analysis
-We will do a short analysis of the data
-
-## Libraries
-```{r echo=TRUE, results='hide', message=FALSE}
-library(ggplot2)
-library(tidyverse)
+beetle_data <- read.csv("Data/beetle.csv")
+str(beetle_data)
 ```
 
 ## Plot
 ```{r}
-beetle.data %>%
+library(ggplot2)
+library(tidyverse)
+beetle_data %>%
   ggplot(aes(x = dose_mg, y = mortality_rate)) +
     geom_point() +
     geom_smooth(method = 'lm')
 
 ```
 
+Now let's compute if statistics verify the positive correlation between the dose and the mortality rate. The method between two continuous variables can be computed using a pearson correlation.
+```{r}
+x = beetle_data$dose_mg
+y = beetle_data$mortality_rate
+cor(x,y, method = "pearson")
+```
+
+As might have been expected, the correlation between both variables is strong.
