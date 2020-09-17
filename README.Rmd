@@ -48,9 +48,11 @@ beetle_data %>%
 
 ```
 
+Now let's compute if statistics verify the positive correlation between the dose and the mortality rate. The method between two continuous variables can be computed using a pearson correlation.
 ```{r}
 x = beetle_data$dose_mg
 y = beetle_data$mortality_rate
-cor(x,y)
+cor(x,y, method = "pearson")
 ```
 
+As might have been expected, the correlation between both variables is strong.
