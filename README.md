@@ -5,6 +5,9 @@ R Notebook for beetle data
       - [The source of the dataset](#the-source-of-the-dataset)
       - [Flour beetle](#flour-beetle)
   - [Variables](#variables)
+  - [Analysis](#analysis)
+      - [Libraries](#libraries)
+      - [Plot](#plot)
 
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you
 execute code within the notebook, the results appear beneath the code.
@@ -49,21 +52,18 @@ str(beetle.data)
     ##  $ number.killed : int  6 13 18 28 52 53 61 60
     ##  $ mortality.rate: num  0.122 0.217 0.29 0.5 0.825 ...
 
+# Analysis
+
+We will do a short analysis of the data
+
+## Libraries
+
 ``` r
 library(ggplot2)
 library(tidyverse)
 ```
 
-    ## -- Attaching packages ------------------------------------------- tidyverse 1.3.0 --
-
-    ## v tibble  3.0.3     v dplyr   1.0.2
-    ## v tidyr   1.1.2     v stringr 1.4.0
-    ## v readr   1.3.1     v forcats 0.5.0
-    ## v purrr   0.3.4
-
-    ## -- Conflicts ---------------------------------------------- tidyverse_conflicts() --
-    ## x dplyr::filter() masks stats::filter()
-    ## x dplyr::lag()    masks stats::lag()
+## Plot
 
 ``` r
 beetle.data %>%
@@ -74,4 +74,4 @@ beetle.data %>%
 
     ## `geom_smooth()` using formula 'y ~ x'
 
-![](README_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
+![](README_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
