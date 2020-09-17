@@ -36,10 +36,11 @@ Source:
 # Variables
 
 We have chosen to use the following naming convention: lower case words
-seperated by dots in the case of variables, and first word lowercase and
-any additional words in upper case for functions. An example of a
-variable structured via this naming convention might be weight.kg, and
-an example of a properly named function would be computeAverage.
+seperated by underscores in the case of variables, and first word
+lowercase and any additional words in upper case for functions. An
+example of a variable structured via this naming convention might be
+weight\_kg, and an example of a properly named function would be
+computeAverage.
 
 ``` r
 beetle.data <- read.csv("Data/beetle.csv")
@@ -47,10 +48,10 @@ str(beetle.data)
 ```
 
     ## 'data.frame':    8 obs. of  4 variables:
-    ##  $ dose.mg       : num  49.1 53 56.9 60.8 64.8 ...
-    ##  $ number.tested : int  49 60 62 56 63 59 62 60
-    ##  $ number.killed : int  6 13 18 28 52 53 61 60
-    ##  $ mortality.rate: num  0.122 0.217 0.29 0.5 0.825 ...
+    ##  $ dose_mg       : num  49.1 53 56.9 60.8 64.8 ...
+    ##  $ number_tested : int  49 60 62 56 63 59 62 60
+    ##  $ number_killed : int  6 13 18 28 52 53 61 60
+    ##  $ mortality_rate: num  0.122 0.217 0.29 0.5 0.825 ...
 
 # Analysis
 
@@ -67,7 +68,7 @@ library(tidyverse)
 
 ``` r
 beetle.data %>%
-  ggplot(aes(x = dose.mg, y = mortality.rate)) +
+  ggplot(aes(x = dose_mg, y = mortality_rate)) +
     geom_point() +
     geom_smooth(method = 'lm')
 ```
