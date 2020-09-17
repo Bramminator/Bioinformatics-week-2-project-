@@ -2,8 +2,8 @@ R Notebook for beetle data
 ================
 
   - [The data set](#the-data-set)
-      - [The source of the dataset](#the-source-of-the-dataset)
       - [Flour beetle](#flour-beetle)
+          - [The source of the dataset](#the-source-of-the-dataset)
   - [Variables](#variables)
   - [Analysis](#analysis)
       - [Libraries](#libraries)
@@ -17,6 +17,13 @@ execute code within the notebook, the results appear beneath the code.
 This data set illustrates the acute mortality of flour beetles
 (Tribolium confusum) following 5 hour exposure to carbon disulfide gas.
 
+## Flour beetle
+
+![Flour Beetle](Graphics/Red-flour-beetle.jpg)
+
+Source:
+<https://plunketts.net/pest-identification/other-pests/red-flour-beetles-confused-flour-beetles>
+
 ### The source of the dataset
 
 Burnham, K. P., Anderson, D. R. (2002) Model Selection and Multimodel
@@ -25,13 +32,6 @@ Springer: New York.
 
 Young, L. J., Young, J. H. (1998) Statistical Ecology. Kluwer Academic
 Publishers: London.
-
-## Flour beetle
-
-![Flour Beetle](Graphics/Red-flour-beetle.jpg)
-
-Source:
-<https://plunketts.net/pest-identification/other-pests/red-flour-beetles-confused-flour-beetles>
 
 # Variables
 
